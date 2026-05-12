@@ -1,0 +1,33 @@
+box{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+ 
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+ 
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.flex-container .box{
+    display: flex;
+    justify-content: center; /** pone los elementos al centro pero de manera horizontal */
+    align-items: center; /** pone los elementos al centro pero de manera vertical */
+}
+ 
+/** USO DEL GRID */
+.gridbox{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: .5rem;
+}
